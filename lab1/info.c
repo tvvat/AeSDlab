@@ -6,7 +6,7 @@
 int check_int(int *a){
 
 	double n;
-	char *s;
+	
 	int tmp ;
 	tmp = scanf("%lf", &n);
 	while(((int) n!= n)||(tmp <=0 )) {
@@ -118,7 +118,6 @@ int chek_num(int number) {
 
 void new_matr(Matrix *rez, Matrix a) {
 
-	int tmp;
 	int *p;
 	rez->lines = a.lines;
 	rez->matr = (Line *) malloc(rez->lines * sizeof(Line));
